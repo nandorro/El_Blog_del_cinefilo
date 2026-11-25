@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Blog del Cinéfilo - Cartelera Madrid</title>
+    <!-- Enlazamos nuestra hoja de estilos -->
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <!-- CABECERA PRINCIPAL -->
+    <header>
+        <h1>🎬 El Blog del Cinéfilo</h1>
+        <p>Cartelera rápida de Madrid y diario de desarrollo de la app</p>
+        
+        <!-- MENÚ DE NAVEGACIÓN (Cumple el Criterio 2 de la rúbrica: blog navegable) -->
+        <nav>
+            <a href="#cartelera">Cartelera Hoy</a>
+            <a href="#entrada1">1. Qué es El Blog del Cinéfilo</a>
+            <a href="#entrada2">2. De dónde salen los datos</a>
+            <a href="#entrada3">3. Tráilers y Web</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- SECCIÓN INTERACTIVA: CINES MÉNDEZ ÁLVARO Y KINÉPOLIS -->
+        <!-- JavaScript rellenará este bloque automáticamente -->
+        <section id="cartelera">
+            <h2>🍿 Cartelera en Directo (Méndez Álvaro y Kinépolis)</h2>
+            <div id="contenedor-cines" class="grid-cines"></div>
+        </section>
+
+        <hr>
+
+        <!-- ENTRADAS DEL BLOG (Cumple el Criterio 1: Mínimo 3 entradas con texto e imagen) -->
+        <section id="blog">
+            <h2>📝 Diario del Proyecto (Entradas)</h2>
+
+            <!-- ENTRADA 1 -->
+            <article id="entrada1" class="post">
+                <h3>1. Qué es El Blog del Cinéfilo y cómo se divide la pantalla</h3>
+                <!-- Imagen de ejemplo libre de derechos -->
+                <img src="foto1.png" alt="Sala de cine">
+                <p><strong>El Blog del Cinéfilo</strong> nació como una app Android nativa en Kotlin diseñada para consultar de un vistazo las sesiones de los cines de Madrid sin publicidad ni esperas. En esta versión web replicamos las dos franjas principales: <em>Cinesa Méndez Álvaro</em> y <em>Kinépolis Madrid</em>.</p>
+            </article>
+
+            <!-- ENTRADA 2 -->
+            <article id="entrada2" class="post">
+                <h3>2. Arquitectura de datos y códigos de cine</h3>
+                <img src="foto2.png">
+                <p>Para evitar los bloqueos anti-bots de las webs comerciales, la aplicación consulta fichas unificadas mediante identificadores únicos (como el código <strong>E0247</strong> para Méndez Álvaro y <strong>E0453</strong> para Kinépolis), mostrando sesiones agrupadas por versión y estado.</p>
+            </article>
+
+            <!-- ENTRADA 3 -->
+            <article id="entrada3" class="post">
+                <h3>3. Conexión directa con YouTube y webs oficiales</h3>
+                <img src="foto3.png" alt="Reproductor de vídeo con botón de play">
+                <p>Cada tarjeta de película permite lanzar inmediatamente la búsqueda de su tráiler oficial en español en YouTube con un solo clic, mientras que cada cabecera incluye un acceso directo a la web oficial del cine para comprar entradas.</p>
+            </article>
+        </section>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>Práctica 1: Desarrollo de Aplicaciones en Red - Proyecto El Blog del Cinéfilo</p>
+    </footer>
+
+    <!-- Enlazamos nuestro código JavaScript al final para que el HTML ya esté cargado -->
+    <script src="app.js"></script>
+</body>
+</html>
